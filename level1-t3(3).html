@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Using Js</title>
+    <style>
+        .container{
+            padding: 40px;
+            border: 2px solid black;
+            width: 30%;
+            background-color: aquamarine;
+        }
+        button{
+            padding: 5px;
+            width: 160px;
+            border-radius: 20px;
+            font-size: medium;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: 3px solid rgb(2, 2, 2);
+        }
+        button:hover{
+            background-color: brown;
+            color: aliceblue;
+        }
+        label{
+            font-weight: bolder;
+        }
+    </style>
+    <script>
+        function addNumbers() {
+            var num1 = parseFloat(document.getElementById('number1').value);
+            var num2 = parseFloat(document.getElementById('number2').value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Please enter valid numbers");
+                return;
+            }
+            var result = num1 + num2;
+            alert("The result is: " + result);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        
+    <label for="number1">Enter number 1: </label>
+    <input type="text" id="number1">
+<br>
+<br>
+    <label for="number2">Enter number 2: </label>
+    <input type="text" id="number2">
+<br>
+<br>
+    <button onclick="addNumbers()">Add Numbers</button>
+    </div>
+</body>
+</html>

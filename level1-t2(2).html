@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2-Js alert</title>
+    <style>
+        button{
+            padding: 15px;
+            width: 100px;
+            border-radius: 20px;
+            font-size: medium;
+            font-weight: bolder;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: 3px solid rgb(2, 2, 2);
+        }
+        button:hover{
+            background-color: brown;
+            color: aliceblue;
+        }
+    </style>
+
+    <script>
+        function displayGreeting() {
+            var currentTime = new Date();
+            var currentHour = currentTime.getHours();
+
+            var greeting;
+
+            if (currentHour < 12) {
+                greeting = "Good morning!";
+            } else if (currentHour < 18) {
+                greeting = "Good afternoon!";
+            } else {
+                greeting = "Good evening!";
+            }
+
+            alert(greeting);
+        }
+    </script>
+</head>
+<body>
+    <body>
+
+        <button onclick="displayGreeting()">Display Greeting</button>
+        
+        </body>
+</body>
+</html>
