@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar-Nik</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            background-color: aquamarine;
+            box-shadow: 10px 10px 50px 0 black;
+        }
+    
+        .logo img{
+            width: 80px;
+            padding-top: 7px;
+            border-radius: 30px;
+        }
+        .right ul{
+            display: flex;
+            gap: 30px;
+        }
+        .right ul li{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor:pointer;
+        }
+        .right ul li img{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt="error">
+            </div>
+            <div class="right">
+                <ul>
+                    <li>PRODUCT <img src="down.png" alt="" width="18px"></li>
+                    <li>PRICING <img src="down.png" alt="" width="19px"></li>
+                    <li>RESOURCES <img src="down.png" alt="" width="19px"></li>
+                    <li>ABOUT US <img src="down.png" alt="" width="19px"></li>
+                    <li>
+                        <img src="small img.png" alt="error" width="52px" style="border-radius: 30px;">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>

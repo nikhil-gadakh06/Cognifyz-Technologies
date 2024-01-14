@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page-Nik</title>
+    <style>
+        body{
+            background-color: rgb(255, 157, 157);
+        }
+        .container {
+            margin: auto;
+            border: 2px solid black;
+            width: 40%;
+            height: 50%;
+            background-color: #dddddd;
+            border-radius:20px;
+        }
+
+        div {
+            text-align: center;
+            margin: 10px;
+        }
+
+        button {
+            background-color: rgb(35, 175, 105);
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            padding: 15px;
+            border-radius: 20px;
+             width: 100px;
+        }
+
+        button:hover {
+            background-color: rgb(225, 240, 140);
+            color: black;
+        }
+
+        label{
+            font-size: large;
+            font-weight: bolder;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="indexserv" method="post">
+            <div class="container">
+                <h2>LOGIN PAGE</h2>
+                <br>
+                <div>
+                    <label for="Username">Username</label>
+                    <input type="text" placeholder="xyz@gmail.com" name="username">
+                </div>
+                <br>
+                <div>
+                    <label for="Password" >Password</label>
+                    <input type="password" name="password" placeholder="*********">
+                </div>
+                <br>
+                <div>
+                    <button type="submit">
+                        Submit
+                    </button>
+                </div>
+                <div>
+                    <p>No Account ???</p>
+                    <a href="#" >Create New Account</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
