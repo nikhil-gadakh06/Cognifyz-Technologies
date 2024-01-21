@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile-Friendly Navigation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #dfc1c1;
+        }
+
+        header {
+            background-color: #afdae7;
+            color: #000000;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f3e853;
+            text-shadow:0px 0px 20px #e447ca;
+        }
+
+        nav ul {
+            list-style: none;
+            margin-right: 10px;
+            padding: 10px;
+            display: flex;
+            
+        }
+
+        nav li {
+            margin-right: 70px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            font-size: 14px;
+            transition: color 0.3s ease-in-out;
+            font-size: larger;
+        }
+
+        nav a:hover {
+            color: #ff008c;
+        }
+
+        /* Hamburger menu styles */
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: #444;
+                display: none;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            nav li {
+                margin: 0;
+                text-align: center;
+                padding: 10px;
+                border-bottom: 1px solid #666;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mobile Friendly Navigation Bar</h1>
+    </header>
+
+    <nav>
+        <div class="menu-icon">&#9776;</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+
+</body>
+</html>
