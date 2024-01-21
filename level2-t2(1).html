@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Media Queries Task</title>
+    <style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0bdff;
+    color: #161515;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: #eee;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #8f8f8f;
+    color: #eb184d;
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+    margin-top: 230px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    /* Adjust styles for small screens */
+    nav {
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    /* Adjust styles for medium screens */
+    main {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    /* Adjust styles for large screens */
+    main {
+        font-size: 24px;
+    }
+    footer {
+        font-size: 24px;
+        font-weight: lighter;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Media Queries</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Welcome to CSS Media Queries</h2>
+            <p>Here's Content of our Website</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright-Designed By Nik Gadakh</p>
+    </footer>
+</body>
+</html>
